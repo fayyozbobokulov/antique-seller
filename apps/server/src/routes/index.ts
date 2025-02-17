@@ -1,5 +1,6 @@
 import { Application, Router } from 'express';
-import { sseController } from '../controllers/sseController';
+import { sseController } from '../controllers/sse.controller';
+import { openAIRoutes } from './openai.routes';
 
 export const configureRoutes = (app: Application): void => {
   const apiRouter = Router();
@@ -15,6 +16,9 @@ export const configureRoutes = (app: Application): void => {
       connectedClients: sseController.getConnectedClients()
     });
   });
+
+  // OpenAI routes
+  apiRouter.use('/openai', openAIRoutes);
 
   // Mount API routes
   app.use('/api', apiRouter);
