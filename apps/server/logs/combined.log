@@ -16,3 +16,10 @@
 {"level":"error","message":"Operational error: Route /favicon.ico not found","timestamp":"2025-02-17T01:51:11.301Z"}
 {"level":"info","message":"GET /api/health","timestamp":"2025-02-17T01:51:27.591Z"}
 {"level":"info","message":"Client disconnected from SSE","timestamp":"2025-02-17T01:51:53.229Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T01:58:54.463Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T01:58:54.466Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T02:01:32.951Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T02:01:32.954Z"}
+{"level":"info","message":"GET /api/events","timestamp":"2025-02-17T02:01:54.396Z"}
+{"level":"info","message":"Client 2e823665-fa5d-489c-b4ce-31df3f69d5fa connected to conversation 26f35cfa-a1bf-48e4-9b87-62a5c3a7007d","timestamp":"2025-02-17T02:01:54.400Z"}
+{"level":"info","message":"POST /api/message","timestamp":"2025-02-17T02:02:09.533Z"}
