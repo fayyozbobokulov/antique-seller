@@ -1,10 +1,20 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": [".env*"],
+  "globalDependencies": [
+    ".env*",
+    "tsconfig.build.json"
+  ],
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**", "build/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "!.next/cache/**",
+        "build/**"
+      ]
     },
     "lint": {
       "outputs": []
@@ -17,10 +27,14 @@
     "start": {
       "cache": false,
       "persistent": true,
-      "dependsOn": ["build"]
+      "dependsOn": [
+        "build"
+      ]
     },
     "test": {
-      "outputs": ["coverage/**"],
+      "outputs": [
+        "coverage/**"
+      ],
       "dependsOn": []
     },
     "clean": {

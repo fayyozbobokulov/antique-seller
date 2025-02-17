@@ -4,6 +4,7 @@
   "description": "Professional Express TypeScript Backend with SSE Support",
   "main": "dist/index.js",
   "scripts": {
+    "clean": " turbo run clean && git clean -xdf .turbo node_modules",
     "start": "node dist/index.js",
     "dev": "nodemon",
     "build": "tsc",
@@ -12,6 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@antique-seller/shared": "*",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",

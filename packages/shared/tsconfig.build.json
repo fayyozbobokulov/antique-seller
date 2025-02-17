@@ -1,7 +1,9 @@
 {
-	"extends": "../../tsconfig.json",
+	"extends": "../../tsconfig.build.json",
+	"include": ["src"],
 	"compilerOptions": {
 		"noImplicitAny": false,
+		"outDir": "dist",
 		"strictNullChecks": false
 	}
 }

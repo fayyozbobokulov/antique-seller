@@ -23,3 +23,9 @@
 {"level":"info","message":"GET /api/events","timestamp":"2025-02-17T02:01:54.396Z"}
 {"level":"info","message":"Client 2e823665-fa5d-489c-b4ce-31df3f69d5fa connected to conversation 26f35cfa-a1bf-48e4-9b87-62a5c3a7007d","timestamp":"2025-02-17T02:01:54.400Z"}
 {"level":"info","message":"POST /api/message","timestamp":"2025-02-17T02:02:09.533Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T02:10:01.042Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T02:10:01.044Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T02:11:33.764Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T02:11:33.768Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T02:14:08.288Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T02:14:08.291Z"}

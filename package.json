@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "clean": " turbo run clean && git clean -xdf .turbo node_modules",
     "dev": "turbo run dev --parallel",
     "dev:client": "turbo run dev --filter=@antique-seller/client",
     "dev:server": "turbo run dev --filter=@antique-seller/server",

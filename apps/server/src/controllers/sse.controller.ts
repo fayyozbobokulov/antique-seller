@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { logger } from '../utils/logger';
-import { Message, MessageDelta, ConversationMetadata } from '../types/message';
+import { Message, MessageDelta, ConversationMetadata } from '@antique-seller/shared';
 import { v4 as uuidv4 } from 'uuid';
 
 export class SSEController {
