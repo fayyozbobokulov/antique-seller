@@ -15,6 +15,7 @@ class App {
     this.middleware();
     this.routes();
     this.errorHandling();
+    this.logRegisteredRoutes();
   }
 
   private middleware(): void {
@@ -44,6 +45,41 @@ class App {
 
   private routes(): void {
     configureRoutes(this.express);
+  }
+
+  private logRegisteredRoutes(): void {
+    if (!this.express._router) {
+      logger.warn('No routes have been registered yet');
+      return;
+    }
+
+    const routes: { path: string; methods: string[] }[] = [];
+    this.express._router.stack.forEach((middleware: any) => {
+      if (middleware.name === 'router') {
+        // This is the /api router
+        const routerStack = middleware.handle.stack;
+        routerStack.forEach((handler: any) => {
+          if (handler.route) {
+            const path = '/api' + handler.route.path;
+            const methods = Object.keys(handler.route.methods)
+              .filter(method => handler.route.methods[method])
+              .map(method => method.toUpperCase());
+            routes.push({ path, methods });
+          }
+        });
+      } else if (middleware.route) {
+        const path = middleware.route.path;
+        const methods = Object.keys(middleware.route.methods)
+          .filter(method => middleware.route.methods[method])
+          .map(method => method.toUpperCase());
+        routes.push({ path, methods });
+      }
+    });
+
+    logger.info('Registered Routes:');
+    routes.forEach(route => {
+      logger.info(`${route.methods.join(', ')}\t${route.path}`);
+    });
   }
 
   private errorHandling(): void {

@@ -1,0 +1,18 @@
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T01:45:08.638Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T01:47:14.353Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T01:47:14.357Z"}
+{"level":"info","message":"Registered Routes:","timestamp":"2025-02-17T01:48:58.094Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T01:48:58.096Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T01:48:58.098Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T01:49:06.365Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T01:49:06.368Z"}
+{"level":"warn","message":"No routes have been registered yet","timestamp":"2025-02-17T01:50:26.144Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-02-17T01:50:26.147Z"}
+{"level":"info","message":"GET /api/health","timestamp":"2025-02-17T01:50:33.997Z"}
+{"level":"info","message":"GET /api/events","timestamp":"2025-02-17T01:50:39.923Z"}
+{"level":"info","message":"Client connected to SSE","timestamp":"2025-02-17T01:50:39.925Z"}
+{"level":"info","message":"GET /api/health","timestamp":"2025-02-17T01:51:10.722Z"}
+{"level":"info","message":"GET /favicon.ico","timestamp":"2025-02-17T01:51:11.300Z"}
+{"level":"error","message":"Operational error: Route /favicon.ico not found","timestamp":"2025-02-17T01:51:11.301Z"}
+{"level":"info","message":"GET /api/health","timestamp":"2025-02-17T01:51:27.591Z"}
+{"level":"info","message":"Client disconnected from SSE","timestamp":"2025-02-17T01:51:53.229Z"}
